@@ -1,6 +1,12 @@
+import { CardList } from "../components/CardList";
+
+
 
 export default function Home() {
   return (
-      <h1>Home</h1>
+    <div>
+  
+      <CardList />
+    </div>
   )
 }
