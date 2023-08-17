@@ -1,10 +1,15 @@
-import { Card, CardContent } from "./ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Button } from "./ui/button";
+import { Card, CardContent, CardDescription, CardHeader } from "./ui/card";
+import { Checkbox } from "./ui/checkbox";
 import { Input } from "./ui/input";
+import { Label } from "./ui/label";
 
 export default function UltimosPedidos() {
     return (
-        <Card className="bg-red-300 w-4/6 h-[27rem] ml-32 my-80">
-            <CardContent className="flex justify-between flex-row my-5">
+
+        <Card className="bg-slate-50 w-4/6 h-[27rem] ml-32 my-80">
+            <CardHeader className="flex justify-between items-center flex-row my-5">
                 <h1>Ultimos Pedidos</h1>
 
                 <label className="relative block">
@@ -23,14 +28,105 @@ export default function UltimosPedidos() {
                     <input className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm h-7" placeholder="Pesquisar..." type="text" name="search"/>
                 </label>
 
-
-                <div>
-
                     
 
-                </div>
+            </CardHeader>
 
-            </CardContent>
+            <CardDescription className="flex flex-col space-y-6 justify-center items-center">
+
+            <Card className="w-[90%] h-14 bg-transparent border border-slate-900">
+
+                <CardContent className="flex items-center justify-between ">
+
+                    <Avatar className="h-12 w-12">
+                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+
+                    <Label className="ml-4 text-slate-800">jailson pé de gato</Label>
+
+
+                    <Label className="ml-4 text-slate-800">N° 3 </Label>
+
+                    <Button variant={"config"} className="border border-2 bg-transparent">Abrir pedido</Button>
+
+                    <Checkbox className="h-7 w-7 data-[state=checked]:bg-green-400 data-[state=checked]:text-primary-foreground" />
+
+                </CardContent>
+
+
+            </Card>
+
+            <Card className="w-[90%] h-14 bg-transparent border border-slate-900">
+
+                <CardContent className="flex items-center justify-between ">
+
+                    <Avatar className="h-12 w-12">
+                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+
+                    <Label className="ml-4 text-slate-800">jailson pé de gato</Label>
+
+
+                    <Label className="ml-4 text-slate-800">N° 3 </Label>
+
+                    <Button variant={"config"} className="border border-2 bg-transparent">Abrir pedido</Button>
+
+                    <Checkbox className="h-7 w-7 data-[state=checked]:bg-green-400 data-[state=checked]:text-primary-foreground" />
+
+                </CardContent>
+
+
+            </Card>
+
+            <Card className="w-[90%] h-14 bg-transparent border border-slate-900">
+
+                <CardContent className="flex items-center justify-between ">
+
+                    <Avatar className="h-12 w-12">
+                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+
+                    <Label className="ml-4 text-slate-800">jailson pé de gato</Label>
+
+
+                    <Label className="ml-4 text-slate-800">N° 3 </Label>
+
+                    <Button variant={"config"} className="border border-2 bg-transparent">Abrir pedido</Button>
+
+                    <Checkbox className="h-7 w-7 data-[state=checked]:bg-green-400 data-[state=checked]:text-primary-foreground" />
+
+                </CardContent>
+
+
+            </Card>
+
+            <Card className="w-[90%] h-14 bg-transparent border border-slate-900">
+
+                <CardContent className="flex items-center justify-between ">
+
+                    <Avatar className="h-12 w-12">
+                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                    <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+
+                    <Label className="ml-4 text-slate-800">jailson pé de gato</Label>
+
+
+                    <Label className="ml-4 text-slate-800">N° 3 </Label>
+
+                    <Button variant={"config"} className="border border-2 bg-transparent">Abrir pedido</Button>
+
+                    <Checkbox className="h-7 w-7 data-[state=checked]:bg-green-400 data-[state=checked]:text-primary-foreground" />
+
+                </CardContent>
+
+
+            </Card>
+
+            </CardDescription>
 
 
         </Card>
