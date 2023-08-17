@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Separator } from "./ui/separator";
-import { Button } from "./ui/button";
+import { Separator } from "./ui/Separator";
+import { Button } from "./ui/Button";
 
 export default function Navbar() {
   return (

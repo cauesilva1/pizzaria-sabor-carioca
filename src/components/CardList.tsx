@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/Button"
 import {
     Card,
     CardContent,
@@ -9,7 +9,7 @@ import {
     CardTitle,
 } from "@/components/ui/Card"
 import { Target } from 'lucide-react';
-import { Separator } from "./ui/separator";
+import { Separator } from "./ui/Separator";
 
 
 type CardProps = React.ComponentProps<typeof Card>
