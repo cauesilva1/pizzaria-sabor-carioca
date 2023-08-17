@@ -19,8 +19,8 @@ export default function UltimosPedidos() {
 
     return (
 
-        <Card className="bg-slate-50 w-4/6 h-[27rem] ml-32 my-80">
-            <CardHeader className="flex justify-between items-center flex-row my-5">
+        <Card className="bg-slate-50 h-[29rem] px-20 mt-10 ml-25">
+            <CardHeader className="flex justify-between items-center flex-row my-5 space-x-5">
                 <h1>Ultimos Pedidos</h1>
 
                 <label className="relative block">

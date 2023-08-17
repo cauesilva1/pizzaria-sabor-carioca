@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 export default function Navbar() {
   return (
-    <aside className=" flex flex-col bg-slate-50 w-52 h-screen rounded-r-3xl">
+    <aside className=" flex flex-col bg-slate-50 w-52 h-screen rounded-r-3xl absolute">
         {/* logo whats */}
       <div className="flex items-center  mt-10 ml-10"> 
         <svg
@@ -201,7 +201,7 @@ export default function Navbar() {
 
 
       <div className="flex flex-col justify-center items-center mx-2 mt-40 mb-4">
-        <Button className="flex, flex-row w-40 bg-backgroundhtml text-slate-800 gap-1">
+        <Button variant='config' className="flex, flex-row w-40 bg-backgroundhtml text-slate-800 gap-1">
           <svg
             width="24"
             height="24"

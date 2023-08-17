@@ -17,9 +17,9 @@ type CardProps = React.ComponentProps<typeof Card>
 
 export function CardList({ className, ...props }: CardProps) {
     return (
-        <section className="flex flex-row justify-center gap-x-7 mt-9">
+        <section className="flex flex-row justify-center gap-x-7 mt-16">
 
-            <Card className="flex flex-col items-center rounded-xl h-48">
+            <Card className="flex flex-col items-center w-[17rem] rounded-xl h-48">
 
                 <CardHeader className="flex flex-row gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
@@ -42,7 +42,7 @@ export function CardList({ className, ...props }: CardProps) {
                 </CardFooter>
             </Card>
 
-            <Card className="flex flex-col justify-start  rounded-xl h-48">
+            <Card className="flex flex-col justify-start w-[17rem] rounded-xl h-48">
 
                 <CardHeader className="flex flex-row gap-x-3">
 
@@ -67,7 +67,7 @@ export function CardList({ className, ...props }: CardProps) {
 
             </Card>
 
-            <Card className="flex flex-col justify-start  rounded-xl h-48">
+            <Card className="flex flex-col justify-start w-[17rem] rounded-xl h-48">
 
                 <CardHeader className="flex flex-row gap-x-3 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="29" viewBox="0 0 26 29" fill="none">
