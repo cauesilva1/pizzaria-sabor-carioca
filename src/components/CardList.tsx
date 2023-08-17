@@ -17,7 +17,7 @@ type CardProps = React.ComponentProps<typeof Card>
 
 export function CardList({ className, ...props }: CardProps) {
     return (
-        <section className="flex flex-row justify-center gap-x-7 mt-16 ml-44">
+        <section className="flex flex-row justify-center gap-x-7 mt-16">
 
             <Card className="flex flex-col items-center w-[17rem] rounded-xl h-48">
 
