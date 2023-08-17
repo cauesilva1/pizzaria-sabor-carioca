@@ -13,10 +13,11 @@ export default function Home() {
 
       <Navbar />
 
-      <UltimosPedidos />
-    <div>
-  
-      <CardList />
+      <div className="flex flex-col items-center">
+        <CardList />
+        <UltimosPedidos />
+      </div>
+
     </div>
   )
 }
