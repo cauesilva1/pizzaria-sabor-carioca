@@ -1,3 +1,5 @@
+"use client"
+
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -17,6 +19,7 @@ type CardProps = React.ComponentProps<typeof Card>
 
 export function CardList({ className, ...props }: CardProps) {
     return (
+
         <section className="flex flex-row justify-center gap-x-7 mt-16">
 
             <Card className="flex flex-col items-center w-[17rem] rounded-xl h-48">
@@ -110,5 +113,6 @@ export function CardList({ className, ...props }: CardProps) {
             </Card>
 
         </section>
+        
     );
 };

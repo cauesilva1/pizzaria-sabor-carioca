@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar'
-import './globals.css'
+import '../../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -16,10 +16,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.className}`} >
+    <html lang="pt-br" className={`${inter.className}`} >
       <body className='bg-backgroundhtml'>
 
-      {/* <Navbar /> */}
+      <Navbar />
 
         {children}
 
