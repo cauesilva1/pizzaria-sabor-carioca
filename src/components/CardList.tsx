@@ -9,6 +9,7 @@ import {
     CardTitle,
 } from "@/components/ui/Card"
 import { Target } from 'lucide-react';
+import { Separator } from "./ui/separator";
 
 
 type CardProps = React.ComponentProps<typeof Card>
@@ -17,8 +18,10 @@ type CardProps = React.ComponentProps<typeof Card>
 export function CardList({ className, ...props }: CardProps) {
     return (
         <section className="flex flex-row justify-center gap-x-7 mt-9">
-            <Card className="flex flex-col items-center">
-                <CardHeader className="flex flex-row gap-x-3">
+
+            <Card className="flex flex-col items-center rounded-xl h-48">
+
+                <CardHeader className="flex flex-row gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
                         <path d="M19.4998 21.1248C20.3972 21.1248 21.1248 20.3972 21.1248 19.4998C21.1248 18.6023 20.3972 17.8748 19.4998 17.8748C18.6023 17.8748 17.8748 18.6023 17.8748 19.4998C17.8748 20.3972 18.6023 21.1248 19.4998 21.1248Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M19.5 11.375C17.893 11.375 16.3221 11.8515 14.986 12.7443C13.6498 13.6371 12.6084 14.906 11.9935 16.3907C11.3785 17.8753 11.2176 19.509 11.5311 21.0851C11.8446 22.6612 12.6185 24.1089 13.7548 25.2452C14.8911 26.3815 16.3388 27.1554 17.9149 27.4689C19.491 27.7824 21.1247 27.6215 22.6093 27.0065C24.094 26.3916 25.3629 25.3502 26.2557 24.014C27.1485 22.6779 27.625 21.107 27.625 19.5" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
@@ -28,7 +31,8 @@ export function CardList({ className, ...props }: CardProps) {
                     </svg>
                     <CardTitle className="text-xl font-normal">PEDIDOS DIARIOS</CardTitle>
                 </CardHeader>
-                <CardFooter className="flex flex-col">
+
+                <CardFooter className="flex flex-col text-xl items-center justify-center mt-2 ">
                     <div className="mb-6">
                         <span className="border border-black px-9 py-3 rounded-e-xl rounded-s-xl text-xl" >
                             10 Pedidos
@@ -38,7 +42,7 @@ export function CardList({ className, ...props }: CardProps) {
                 </CardFooter>
             </Card>
 
-            <Card className="flex flex-col jsutify-center ">
+            <Card className="flex flex-col justify-start  rounded-xl h-48">
 
                 <CardHeader className="flex flex-row gap-x-3">
 
@@ -51,16 +55,19 @@ export function CardList({ className, ...props }: CardProps) {
                     <CardTitle className="text-xl font-normal">SALDO</CardTitle>
                 </CardHeader>
                 
-                <CardFooter className="flex flex-col">
-                    <div className="mb-6">
-                        <span className="border border-black px-9 py-3 rounded-e-xl rounded-s-xl text-xl" >
+                <CardFooter className="flex h-full justify-center mb-7 flex-col">
+
+                    <div className="border border-black px-9 py-2 rounded-e-xl rounded-s-xl flex flex-row">
+                        <span>
                             R$ 100,00
                         </span>
                     </div>
+
                 </CardFooter>
+
             </Card>
 
-            <Card className="flex flex-col content-center">
+            <Card className="flex flex-col justify-start  rounded-xl h-48">
 
                 <CardHeader className="flex flex-row gap-x-3 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="29" viewBox="0 0 26 29" fill="none">
@@ -70,20 +77,20 @@ export function CardList({ className, ...props }: CardProps) {
                     <CardTitle className="text-xl font-normal">CONTATOS</CardTitle>
                 </CardHeader>
 
-                <CardFooter className="flex flex-col">
+                <CardFooter className="flex h-full justify-center mb-7 flex-col">
 
                     <div className="border border-black px-9 py-2 rounded-e-xl rounded-s-xl flex flex-row">
 
-                        <span className="flex flex-row text-xl">
+                        <span className="flex flex-row text-xl items-center justify-center gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M8.00031 2.00008C6.9394 2.00008 5.92195 2.42152 5.17177 3.17169C4.4216 3.92187 4.00015 4.93932 4.00015 6.00023C4.00015 7.06114 4.4216 8.07859 5.17177 8.82877C5.92195 9.57894 6.9394 10.0004 8.00031 10.0004C9.06121 10.0004 10.0787 9.57894 10.8288 8.82877C11.579 8.07859 12.0005 7.06114 12.0005 6.00023C12.0005 4.93932 11.579 3.92187 10.8288 3.17169C10.0787 2.42152 9.06121 2.00008 8.00031 2.00008ZM2.00008 6.00023C2.00008 4.40887 2.63224 2.88269 3.7575 1.75743C4.88277 0.632165 6.40895 0 8.00031 0C9.59167 0 11.1179 0.632165 12.2431 1.75743C13.3684 2.88269 14.0005 4.40887 14.0005 6.00023C14.0005 7.59159 13.3684 9.11777 12.2431 10.243C11.1179 11.3683 9.59167 12.0005 8.00031 12.0005C6.40895 12.0005 4.88277 11.3683 3.7575 10.243C2.63224 9.11777 2.00008 7.59159 2.00008 6.00023ZM19.6648 9.25336C19.8628 9.42954 19.9827 9.67712 19.9983 9.9417C20.0138 10.2063 19.9237 10.4662 19.7478 10.6644L17.0817 13.6645C16.9878 13.7701 16.8727 13.8546 16.7439 13.9125C16.615 13.9704 16.4754 14.0003 16.3341 14.0003C16.1929 14.0003 16.0532 13.9704 15.9244 13.9125C15.7955 13.8546 15.6804 13.7701 15.5866 13.6645L14.2535 12.1645C14.0877 11.9649 14.0058 11.7087 14.0254 11.4499C14.0449 11.1912 14.1642 10.9501 14.3582 10.7777C14.5521 10.6053 14.8055 10.5151 15.0648 10.526C15.324 10.537 15.5689 10.6483 15.7476 10.8364L16.3336 11.4954L18.2537 9.33536C18.43 9.13751 18.6777 9.01774 18.9423 9.00236C19.2068 8.98699 19.4667 9.07726 19.6648 9.25336ZM4.50017 16.0006C3.24012 16.0006 2.00008 17.2137 2.00008 19.0007C2.00008 19.266 1.89472 19.5203 1.70717 19.7079C1.51963 19.8954 1.26527 20.0008 1.00004 20.0008C0.734812 20.0008 0.480448 19.8954 0.292904 19.7079C0.105361 19.5203 0 19.266 0 19.0007C0 16.3686 1.89307 14.0005 4.50017 14.0005H11.5004C14.1075 14.0005 16.0006 16.3686 16.0006 19.0007C16.0006 19.266 15.8953 19.5203 15.7077 19.7079C15.5202 19.8954 15.2658 20.0008 15.0006 20.0008C14.7354 20.0008 14.481 19.8954 14.2934 19.7079C14.1059 19.5203 14.0005 19.266 14.0005 19.0007C14.0005 17.2137 12.7605 16.0006 11.5004 16.0006H4.50017Z" fill="#0D0D0D" />
                             </svg>
                             13
                         </span>
 
-                        <span className="border-l-2 border-1  mx-4 h-8 border-black"/>
+                        <Separator orientation="vertical"  className="mx-3"/>
 
-                        <span className="flex flex-row text-xl">
+                        <span className="flex flex-row text-xl items-center justify-center gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <g clip-path="url(#clip0_308_176)">
                                     <path d="M7.5 10C8.48891 10 9.45561 9.70676 10.2779 9.15735C11.1001 8.60794 11.741 7.82705 12.1194 6.91342C12.4978 5.99979 12.5969 4.99446 12.4039 4.02455C12.211 3.05465 11.7348 2.16373 11.0355 1.46447C10.3363 0.765206 9.44536 0.289002 8.47545 0.0960758C7.50555 -0.0968503 6.50021 0.00216643 5.58658 0.380605C4.67295 0.759043 3.89206 1.39991 3.34265 2.22215C2.79325 3.0444 2.5 4.0111 2.5 5C2.50132 6.32568 3.02853 7.59668 3.96593 8.53407C4.90332 9.47147 6.17432 9.99868 7.5 10ZM7.5 1.66667C8.15927 1.66667 8.80374 1.86217 9.3519 2.22844C9.90006 2.59471 10.3273 3.1153 10.5796 3.72439C10.8319 4.33348 10.8979 5.0037 10.7693 5.6503C10.6407 6.29691 10.3232 6.89085 9.85702 7.35703C9.39085 7.8232 8.7969 8.14067 8.1503 8.26929C7.5037 8.3979 6.83348 8.33189 6.22439 8.0796C5.6153 7.82731 5.09471 7.40007 4.72843 6.8519C4.36216 6.30374 4.16667 5.65927 4.16667 5C4.16667 4.11595 4.51786 3.2681 5.14298 2.64298C5.7681 2.01786 6.61595 1.66667 7.5 1.66667ZM15 19.1667C15 19.3877 14.9122 19.5996 14.7559 19.7559C14.5996 19.9122 14.3877 20 14.1667 20C13.9457 20 13.7337 19.9122 13.5774 19.7559C13.4211 19.5996 13.3333 19.3877 13.3333 19.1667C13.3333 17.6196 12.7188 16.1358 11.6248 15.0419C10.5308 13.9479 9.0471 13.3333 7.5 13.3333C5.9529 13.3333 4.46917 13.9479 3.37521 15.0419C2.28125 16.1358 1.66667 17.6196 1.66667 19.1667C1.66667 19.3877 1.57887 19.5996 1.42259 19.7559C1.26631 19.9122 1.05435 20 0.833333 20C0.61232 20 0.400358 19.9122 0.244078 19.7559C0.0877974 19.5996 0 19.3877 0 19.1667C0 17.1775 0.790176 15.2699 2.1967 13.8634C3.60322 12.4568 5.51088 11.6667 7.5 11.6667C9.48912 11.6667 11.3968 12.4568 12.8033 13.8634C14.2098 15.2699 15 17.1775 15 19.1667ZM19.7558 11.9108C19.8354 11.9877 19.8989 12.0797 19.9426 12.1813C19.9863 12.283 20.0092 12.3924 20.0102 12.503C20.0112 12.6137 19.9901 12.7234 19.9482 12.8258C19.9063 12.9282 19.8444 13.0213 19.7662 13.0995C19.6879 13.1777 19.5949 13.2396 19.4925 13.2815C19.39 13.3234 19.2803 13.3445 19.1697 13.3435C19.059 13.3426 18.9497 13.3196 18.848 13.2759C18.7463 13.2322 18.6544 13.1688 18.5775 13.0892L17.0833 11.595L15.5892 13.0892C15.432 13.241 15.2215 13.325 15.003 13.3231C14.7845 13.3212 14.5755 13.2335 14.421 13.079C14.2665 12.9245 14.1788 12.7155 14.1769 12.497C14.175 12.2785 14.259 12.068 14.4108 11.9108L15.905 10.4167L14.4108 8.9225C14.259 8.76533 14.175 8.55483 14.1769 8.33634C14.1788 8.11784 14.2665 7.90883 14.421 7.75432C14.5755 7.59981 14.7845 7.51217 15.003 7.51027C15.2215 7.50838 15.432 7.59237 15.5892 7.74417L17.0833 9.23834L18.5775 7.74417C18.7347 7.59237 18.9452 7.50838 19.1637 7.51027C19.3822 7.51217 19.5912 7.59981 19.7457 7.75432C19.9002 7.90883 19.9878 8.11784 19.9897 8.33634C19.9916 8.55483 19.9076 8.76533 19.7558 8.9225L18.2617 10.4167L19.7558 11.9108Z" fill="#0D0D0D" />
@@ -97,8 +104,11 @@ export function CardList({ className, ...props }: CardProps) {
                             5
                         </span>
                     </div>
+
                 </CardFooter>
+
             </Card>
+
         </section>
     );
 };
