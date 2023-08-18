@@ -1,5 +1,6 @@
 import  { CardList }  from "@/components/CardList"; 
 import UltimosPedidos from "@/components/UltimosPedidos";
+import { EditMensages } from "@/pages/EditMesages/EditMensages";
 
 
 
@@ -10,8 +11,9 @@ export default function Home() {
       <div className="flex flex-col w-full justify-center h-full items-center ml-28">
 
         <div className="flex flex-col items-center">
-          <CardList />
-          <UltimosPedidos />
+          {/* <CardList />
+          <UltimosPedidos /> */}
+          <EditMensages />
         </div>
       </div>
     </div>
