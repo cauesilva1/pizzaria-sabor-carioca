@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Button } from "./ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/Avatar";
+import { Button } from "./ui/Button";
 import { Card, CardContent, CardDescription, CardHeader } from "./ui/Card";
-import { Checkbox } from "./ui/checkbox";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
+import { Checkbox } from "./ui/Checkbox";
+import { Input } from "./ui/Input";
+import { Label } from "./ui/Label";
 
 export default function UltimosPedidos() {
     const [selectedButton, setSelectedButton] = useState('contatos');
