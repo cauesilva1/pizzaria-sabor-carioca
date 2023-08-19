@@ -1,18 +1,38 @@
+"use client";
+
 import { CardEditMensage } from "@/components/CardEditMensage";
 
 
 import { Button } from "@/components/ui/Button"
+import { useState } from "react";
 
 export function EditMensages() {
-    return (
-        <main className="border-2 border-red-600 ml-40 flex flex-row h-screen gap-x-8">
-            <section className="flex flex-col justify-center gap-y-7">
-                <CardEditMensage title='Olá equipe da Pizzaria Delícia!Gostaria de fazer um pedido....' />
-                <CardEditMensage title='Olá equipe da Pizzaria Delícia!Gostaria de fazer um pedido....' />
-                <CardEditMensage title='Olá equipe da Pizzaria Delícia!Gostaria de fazer um pedido....' />
-                <CardEditMensage title='Olá equipe da Pizzaria Delícia!Gostaria de fazer um pedido....' />
+    const [selectedValue, setSelectedValue] = useState(true);
 
-                <div className="flex flex-row justify-end">
+    const handleSelected = () => {
+        setSelectedValue(true)
+    }
+
+    return (
+        <main className="ml-40 flex flex-row h-screen ">
+            <section className="flex flex-col justify-center gap-y-7">
+                <CardEditMensage
+                    title='Olá equipe da Pizzaria Delícia!Gostaria de fazer um pedido....' 
+                    selected={selectedValue}/>
+
+                <CardEditMensage
+                    title='Olá equipe da Pizzaria Delícia!Gostaria de fazer um pedido....' 
+                    />
+
+                <CardEditMensage
+                    title='Olá equipe da Pizzaria Delícia!Gostaria de fazer um pedido....' 
+                    />
+
+                <CardEditMensage
+                    title='Olá equipe da Pizzaria Delícia!Gostaria de fazer um pedido....' 
+                    />
+
+                <div className="flex flex-row justify-end pr-9">
                     <Button>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M19 10H17V7H14V5H17V2H19V5H22V7H19V10Z" fill="white" />
@@ -23,19 +43,28 @@ export function EditMensages() {
                 </div>
             </section>
 
-            <section className="flex flex-col justify-around bg-slate-50 rounded-l-lg">
+            <section className="flex flex-col justify-around bg-slate-50 rounded-l-lg px-8 border-2 border-slate-50	">
                 <h2 className="text-3xl text-center	">Editar mensagem de compra</h2>
 
-                <div>
-                    Olá equipe da Pizzaria Delícia! <br />
-                    Gostaria de fazer um pedido, por favor. Estou com muita vontade de uma pizza saborosa.
-                    Poderia me preparar uma pizza média de Pepperoni?
-                    Adicionalmente, se possível, gostaria de acrescentar um pouco de cebola extra.Endereço para entrega:Rua Exemplo, 123Bairro ExemplarCidade, EstadoCEP: 12345-678Fico no aguardo do valor total e do tempo estimado de entrega. Por favor, confirmem o pedido assim que possível.Obrigado![Seu Nome]
+                <div className="h-[24.56rem] rounded bg-gray-300 px-3">
+                    <p className="text-justify">
+                        Olá equipe da Pizzaria Delícia! <br /> <br />
+                        Gostaria de fazer um pedido, por favor. Estou com muita vontade de uma pizza saborosa. <br />
+                        Poderia me preparar uma pizza média de Pepperoni? <br />
+                        Adicionalmente, se possível, gostaria de acrescentar um pouco de cebola extra. <br /> <br />
+                        Endereço para entrega: <br />
+                        Rua Exemplo, 123<br />
+                        Bairro <br />
+                        ExemplarCidade, <br />
+                        EstadoCEP: 12345-678<br /> <br />
+                        Fico no aguardo do valor total e do tempo estimado de entrega. Por favor, confirmem o pedido assim que possível.<br />
+                        Obrigado![Seu Nome]
+                    </p>
                 </div>
 
                 <div className="flex flex-row justify-around">
-                    <Button>Salvar</Button>
-                    <Button>Cancelar</Button>
+                    <Button className="w-[11.68rem] h-[3.43rem]">Salvar</Button>
+                    <Button variant="destructive" className="w-[11.68rem] h-[3.43rem]">Cancelar</Button>
                 </div>
             </section>
         </main>
