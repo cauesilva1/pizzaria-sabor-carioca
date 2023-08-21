@@ -88,7 +88,7 @@ export default function UltimosPedidos() {
 
                         <Label className="ml-4 text-slate-800">N° 3 </Label>
 
-                        <Button variant={"config"} className="border border-2 bg-transparent">Abrir pedido</Button>
+                        <Button variant={"config"} className=" border-2 bg-transparent">Abrir pedido</Button>
 
                         <Checkbox className="h-7 w-7 data-[state=checked]:bg-green-400 data-[state=checked]:text-primary-foreground" />
 
@@ -111,7 +111,7 @@ export default function UltimosPedidos() {
 
                         <Label className="ml-4 text-slate-800">N° 3 </Label>
 
-                        <Button variant={"config"} className="border border-2 bg-transparent">Abrir pedido</Button>
+                        <Button variant={"config"} className=" border-2 bg-transparent">Abrir pedido</Button>
 
                         <Checkbox className="h-7 w-7 data-[state=checked]:bg-green-400 data-[state=checked]:text-primary-foreground" />
 
@@ -134,7 +134,7 @@ export default function UltimosPedidos() {
 
                         <Label className="ml-4 text-slate-800">N° 3 </Label>
 
-                        <Button variant={"config"} className="border border-2 bg-transparent">Abrir pedido</Button>
+                        <Button variant={"config"} className=" border-2 bg-transparent">Abrir pedido</Button>
 
                         <Checkbox className="h-7 w-7 data-[state=checked]:bg-green-400 data-[state=checked]:text-primary-foreground" />
 
@@ -157,7 +157,7 @@ export default function UltimosPedidos() {
 
                         <Label className="ml-4 text-slate-800">N° 3 </Label>
 
-                        <Button variant={"config"} className="border border-2 bg-transparent">Abrir pedido</Button>
+                        <Button variant={"config"} className=" border-2 bg-transparent">Abrir pedido</Button>
 
                         <Checkbox className="h-7 w-7 data-[state=checked]:bg-green-400 data-[state=checked]:text-primary-foreground" />
 
